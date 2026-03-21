@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Khushi Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2 class="logo">Khushi's Portfolio</h2>
+
+<ul>
+
+<li><a href="./index.html">Home</a></li>
+<li><a href="./about.html">About</a></li>
+<li><a href="./experience.html">Experience</a></li>
+<li><a href="./projects.html">Projects</a></li>
+<li><a href="./certificates.html">Certificates</a></li>
+<li><a href="./education.html">Education</a></li>
+</ul>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<img src="profile.png" class="profile">
+
+<h3>Hello, I am</h3>
+
+<h1 class="name">Khushi Kumari</h1>
+
+<div class="floating-icons">
+
+<span class="icon icon1">🚀</span>
+<span class="icon icon2">⭐</span>
+<span class="icon icon3">🎯</span>
+<span class="icon icon4">💡</span>
+<span class="icon icon5">🔧</span>
+
+</div>
+
+
+<div class="roles">
+<h2 class="role-text">
+ <span id="changing-text">Data Analyst</span>
+</h2>
+</div>
+
+<script>
+const roles = [
+  "Data Analyst",
+  "Data Engineer",
+  "Python Developer",
+  "ML Developer",
+  "Web Developer"
+];
+
+let index = 0;
+const textElement = document.getElementById("changing-text");
+
+function changeText() {
+  index = (index + 1) % roles.length;
+  textElement.textContent = roles[index];
+}
+
+setInterval(changeText, 2000); // 👈 har 2 sec me change
+</script>
+
+
+
+<p class="location">📍 Bihar, India</p>
+
+
+<p class="intro">
+
+“A passionate tech enthusiast who combines data, development, and problem-solving to build impactful solutions. 
+I enjoy collaborating in team environments and continuously learning—both on and off the court through sports like badminton and volleyball.”
+
+</p>
+
+<div class="contact-buttons">
+
+<!-- CALL -->
+<a href="tel:+918935976681" class="contact-btn">
+📞 Call
+</a>
+
+<!-- EMAIL -->
+<a href="mailto:khushikumari89359@gmail.com" class="contact-btn">
+✉️ E-mail
+</a>
+
+<!-- LINKEDIN -->
+<a href="https://www.linkedin.com/in/khushi-kumari43/" target="_blank" class="contact-btn">
+💼 LinkedIn
+</a>
+
+<!-- GITHUB -->
+<a href="https://github.com/KHUSHID3" target="_blank" class="contact-btn">
+💻 GitHub
+</a>
+
+<!-- RESUME -->
+<a href="My Resume.pdf" target="_blank" class="contact-btn">
+📄 Resume
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+
+<h1 class="section-title">Skills</h1>
+
+<div class="skills-container">
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+<h3>Python</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+<h3>Java</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+<h3>C++</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+<h3>HTML</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+<h3>CSS</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+<h3>JavaScript</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+<h3>SQL</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://img.icons8.com/color/96/tableau-software.png">
+<h3>Tableau</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://img.icons8.com/color/96/microsoft-excel-2019.png">
+<h3>Excel</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://img.icons8.com/color/96/power-bi.png">
+<h3>Power BI</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact-section">
+
+<h1 class="section-title">Contact Me</h1>
+
+<div class="contact-container">
+
+<form id="contact-form" class="contact-form" action="https://formspree.io/f/xgonbelj" method="POST">
+<div class="input-row">
+
+<div class="input-group">
+<label>Name</label>
+<input type="text" name="name" placeholder="Your Name" required>
+</div>
+
+<div class="input-group">
+<label>Email</label>
+<input type="email" name="email" placeholder="Your Email" required>
+</div>
+
+</div>
+
+<div class="input-group">
+<label>Subject</label>
+<input type="text" name="subject" placeholder="Subject">
+</div>
+
+<div class="input-group">
+<label>Message</label>
+<textarea name="message" placeholder="Your Message" required></textarea>
+</div>
+
+<button type="submit" class="send-btn">Send Message ✈️</button>
+
+</form>
+
+<p id="success-msg" style="display:none; color:#00e0ff; margin-top:10px;">
+✅ Message sent successfully!
+</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Khushi Kumari. All rights reserved.</p>
+
+</footer>
+<script>
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const sectionTop=section.offsetTop;
+
+if(pageYOffset>=sectionTop-200){
+current=section.getAttribute("id");
+}
+
+});
+
+navLinks.forEach(a=>{
+
+a.classList.remove("active");
+
+if(a.getAttribute("href")=="#"+current){
+a.classList.add("active");
+}
+
+});
+
+});
+
+</script>
+<script>
+const form = document.getElementById("contact-form");
+const successMsg = document.getElementById("success-msg");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    successMsg.style.display = "block";
+    form.reset();
+  } else {
+    alert("❌ Something went wrong!");
+  }
+});
+</script>
+
+</body>
+</html>
+
+
